@@ -1,0 +1,415 @@
+{
+  "name": "Grand Teton land-cover (LANDFIRE EVT -> game vegetation types)",
+  "width": 1024,
+  "height": 1024,
+  "bbox": {
+    "latMin": 43.55,
+    "latMax": 44.05,
+    "lonMin": -110.95,
+    "lonMax": -110.45
+  },
+  "projection": "equirectangular (regular lat/lon grid); row 0 = latMax, col 0 = lonMin",
+  "encoding": "RGB8 PNG; class index in RED (0..N-1, 255 = nodata). GREEN = scaled ramp for viewing; BLUE unused.",
+  "types": [
+    "sagebrush_flat",
+    "meadow",
+    "wetland_grass",
+    "riparian",
+    "aspen_grove",
+    "lodgepole_montane",
+    "sprucefir_subalpine",
+    "whitebark_treeline",
+    "alpine_tundra",
+    "barren",
+    "snow_ice",
+    "water"
+  ],
+  "nodata": 255,
+  "source": "local assets/landfire/evt.tif (LF2023_EVT)",
+  "sourceProduct": "LANDFIRE Existing Vegetation Type (EVT), LF 2023 update, 30 m, CONUS",
+  "sourceUrl": "https://lfps.usgs.gov/api (LANDFIRE Product Service)",
+  "license": "public domain (USGS EROS / LANDFIRE)",
+  "resolutionM": 54,
+  "classCounts": {
+    "sagebrush_flat": 215301,
+    "meadow": 111390,
+    "wetland_grass": 36555,
+    "riparian": 37580,
+    "aspen_grove": 22927,
+    "lodgepole_montane": 172962,
+    "sprucefir_subalpine": 178606,
+    "whitebark_treeline": 37250,
+    "alpine_tundra": 24480,
+    "barren": 138641,
+    "snow_ice": 1898,
+    "water": 70986
+  },
+  "nodataCells": 0,
+  "evtLegend": [
+    {
+      "value": 7011,
+      "name": "Rocky Mountain Aspen Forest and Woodland",
+      "lifeform": "Tree",
+      "physiognomy": "Hardwood",
+      "type": "aspen_grove"
+    },
+    {
+      "value": 7046,
+      "name": "Northern Rocky Mountain Subalpine Woodland and Parkland",
+      "lifeform": "Tree",
+      "physiognomy": "Conifer",
+      "type": "whitebark_treeline"
+    },
+    {
+      "value": 7049,
+      "name": "Rocky Mountain Foothill Limber Pine-Juniper Woodland",
+      "lifeform": "Tree",
+      "physiognomy": "Conifer",
+      "type": "whitebark_treeline"
+    },
+    {
+      "value": 7050,
+      "name": "Rocky Mountain Lodgepole Pine Forest",
+      "lifeform": "Tree",
+      "physiognomy": "Conifer",
+      "type": "lodgepole_montane"
+    },
+    {
+      "value": 7055,
+      "name": "Rocky Mountain Subalpine Dry-Mesic Spruce-Fir Forest and Woodland",
+      "lifeform": "Tree",
+      "physiognomy": "Conifer",
+      "type": "sprucefir_subalpine"
+    },
+    {
+      "value": 7056,
+      "name": "Rocky Mountain Subalpine Mesic-Wet Spruce-Fir Forest and Woodland",
+      "lifeform": "Tree",
+      "physiognomy": "Conifer",
+      "type": "sprucefir_subalpine"
+    },
+    {
+      "value": 7057,
+      "name": "Rocky Mountain Subalpine-Montane Limber-Bristlecone Pine Woodland",
+      "lifeform": "Tree",
+      "physiognomy": "Conifer",
+      "type": "whitebark_treeline"
+    },
+    {
+      "value": 7061,
+      "name": "Inter-Mountain Basins Aspen-Mixed Conifer Forest and Woodland",
+      "lifeform": "Tree",
+      "physiognomy": "Conifer-Hardwood",
+      "type": "aspen_grove"
+    },
+    {
+      "value": 7070,
+      "name": "Rocky Mountain Alpine Dwarf-Shrubland",
+      "lifeform": "Shrub",
+      "physiognomy": "Shrubland",
+      "type": "alpine_tundra"
+    },
+    {
+      "value": 7106,
+      "name": "Northern Rocky Mountain Montane-Foothill Deciduous Shrubland",
+      "lifeform": "Shrub",
+      "physiognomy": "Shrubland",
+      "type": "sagebrush_flat"
+    },
+    {
+      "value": 7125,
+      "name": "Inter-Mountain Basins Big Sagebrush Steppe",
+      "lifeform": "Shrub",
+      "physiognomy": "Shrubland",
+      "type": "sagebrush_flat"
+    },
+    {
+      "value": 7126,
+      "name": "Inter-Mountain Basins Montane Sagebrush Steppe",
+      "lifeform": "Shrub",
+      "physiognomy": "Shrubland",
+      "type": "sagebrush_flat"
+    },
+    {
+      "value": 7139,
+      "name": "Northern Rocky Mountain Lower Montane-Foothill-Valley Grassland",
+      "lifeform": "Herb",
+      "physiognomy": "Grassland",
+      "type": "meadow"
+    },
+    {
+      "value": 7140,
+      "name": "Northern Rocky Mountain Subalpine-Upper Montane Grassland",
+      "lifeform": "Herb",
+      "physiognomy": "Grassland",
+      "type": "meadow"
+    },
+    {
+      "value": 7143,
+      "name": "Rocky Mountain Alpine Fell-Field",
+      "lifeform": "Herb",
+      "physiognomy": "Grassland",
+      "type": "alpine_tundra"
+    },
+    {
+      "value": 7144,
+      "name": "Rocky Mountain Alpine Turf",
+      "lifeform": "Herb",
+      "physiognomy": "Grassland",
+      "type": "alpine_tundra"
+    },
+    {
+      "value": 7145,
+      "name": "Rocky Mountain Subalpine-Montane Mesic Meadow",
+      "lifeform": "Herb",
+      "physiognomy": "Grassland",
+      "type": "meadow"
+    },
+    {
+      "value": 7166,
+      "name": "Middle Rocky Mountain Montane Douglas-fir Forest and Woodland",
+      "lifeform": "Tree",
+      "physiognomy": "Conifer",
+      "type": "lodgepole_montane"
+    },
+    {
+      "value": 7167,
+      "name": "Rocky Mountain Poor-Site Lodgepole Pine Forest",
+      "lifeform": "Tree",
+      "physiognomy": "Conifer",
+      "type": "lodgepole_montane"
+    },
+    {
+      "value": 7169,
+      "name": "Northern Rocky Mountain Subalpine Deciduous Shrubland",
+      "lifeform": "Shrub",
+      "physiognomy": "Shrubland",
+      "type": "sagebrush_flat"
+    },
+    {
+      "value": 7292,
+      "name": "Open Water",
+      "lifeform": "Water",
+      "physiognomy": "Open Water",
+      "type": "water"
+    },
+    {
+      "value": 7296,
+      "name": "Developed-Low Intensity",
+      "lifeform": "Developed",
+      "physiognomy": "Developed-Low Intensity",
+      "type": "meadow"
+    },
+    {
+      "value": 7297,
+      "name": "Developed-Medium Intensity",
+      "lifeform": "Developed",
+      "physiognomy": "Developed-Medium Intensity",
+      "type": "meadow"
+    },
+    {
+      "value": 7298,
+      "name": "Developed-High Intensity",
+      "lifeform": "Developed",
+      "physiognomy": "Developed-High Intensity",
+      "type": "meadow"
+    },
+    {
+      "value": 7299,
+      "name": "Developed-Roads",
+      "lifeform": "Developed",
+      "physiognomy": "Developed-Roads",
+      "type": "meadow"
+    },
+    {
+      "value": 7735,
+      "name": "North American Glacier and Ice Field",
+      "lifeform": "Snow-Ice",
+      "physiognomy": "Snow-Ice",
+      "type": "snow_ice"
+    },
+    {
+      "value": 7900,
+      "name": "Western Cool Temperate Urban Deciduous Forest",
+      "lifeform": "Tree",
+      "physiognomy": "Developed",
+      "type": "riparian"
+    },
+    {
+      "value": 7901,
+      "name": "Western Cool Temperate Urban Evergreen Forest",
+      "lifeform": "Tree",
+      "physiognomy": "Developed",
+      "type": "lodgepole_montane"
+    },
+    {
+      "value": 7902,
+      "name": "Western Cool Temperate Urban Mixed Forest",
+      "lifeform": "Tree",
+      "physiognomy": "Developed",
+      "type": "lodgepole_montane"
+    },
+    {
+      "value": 7903,
+      "name": "Western Cool Temperate Urban Herbaceous",
+      "lifeform": "Herb",
+      "physiognomy": "Developed",
+      "type": "meadow"
+    },
+    {
+      "value": 7904,
+      "name": "Western Cool Temperate Urban Shrubland",
+      "lifeform": "Shrub",
+      "physiognomy": "Developed",
+      "type": "sagebrush_flat"
+    },
+    {
+      "value": 7920,
+      "name": "Western Cool Temperate Developed Deciduous Forest",
+      "lifeform": "Tree",
+      "physiognomy": "Developed",
+      "type": "riparian"
+    },
+    {
+      "value": 7921,
+      "name": "Western Cool Temperate Developed Evergreen Forest",
+      "lifeform": "Tree",
+      "physiognomy": "Developed",
+      "type": "lodgepole_montane"
+    },
+    {
+      "value": 7922,
+      "name": "Western Cool Temperate Developed Mixed Forest",
+      "lifeform": "Tree",
+      "physiognomy": "Developed",
+      "type": "lodgepole_montane"
+    },
+    {
+      "value": 7923,
+      "name": "Western Cool Temperate Developed Shrubland",
+      "lifeform": "Shrub",
+      "physiognomy": "Developed",
+      "type": "sagebrush_flat"
+    },
+    {
+      "value": 7924,
+      "name": "Western Cool Temperate Developed Herbaceous",
+      "lifeform": "Herb",
+      "physiognomy": "Developed",
+      "type": "meadow"
+    },
+    {
+      "value": 7963,
+      "name": "Western Cool Temperate Row Crop - Close Grown Crop",
+      "lifeform": "Agriculture",
+      "physiognomy": "Agricultural",
+      "type": "meadow"
+    },
+    {
+      "value": 7964,
+      "name": "Western Cool Temperate Row Crop",
+      "lifeform": "Agriculture",
+      "physiognomy": "Agricultural",
+      "type": "meadow"
+    },
+    {
+      "value": 7965,
+      "name": "Western Cool Temperate Close Grown Crop",
+      "lifeform": "Agriculture",
+      "physiognomy": "Agricultural",
+      "type": "meadow"
+    },
+    {
+      "value": 7967,
+      "name": "Western Cool Temperate Pasture and Hayland",
+      "lifeform": "Herb",
+      "physiognomy": "Agricultural",
+      "type": "meadow"
+    },
+    {
+      "value": 7968,
+      "name": "Western Cool Temperate Wheat",
+      "lifeform": "Agriculture",
+      "physiognomy": "Agricultural",
+      "type": "meadow"
+    },
+    {
+      "value": 9011,
+      "name": "North American Arid West Emergent Marsh",
+      "lifeform": "Herb",
+      "physiognomy": "Riparian",
+      "type": "wetland_grass"
+    },
+    {
+      "value": 9016,
+      "name": "Rocky Mountain Alpine Bedrock and Scree",
+      "lifeform": "Sparse",
+      "physiognomy": "Sparsely Vegetated",
+      "type": "barren"
+    },
+    {
+      "value": 9017,
+      "name": "Rocky Mountain Alpine-Montane Wet Meadow",
+      "lifeform": "Herb",
+      "physiognomy": "Riparian",
+      "type": "wetland_grass"
+    },
+    {
+      "value": 9018,
+      "name": "Rocky Mountain Cliff Canyon and Massive Bedrock",
+      "lifeform": "Sparse",
+      "physiognomy": "Sparsely Vegetated",
+      "type": "barren"
+    },
+    {
+      "value": 9019,
+      "name": "Rocky Mountain Lower Montane-Foothill Riparian Woodland",
+      "lifeform": "Tree",
+      "physiognomy": "Riparian",
+      "type": "riparian"
+    },
+    {
+      "value": 9021,
+      "name": "Rocky Mountain Subalpine-Montane Riparian Shrubland",
+      "lifeform": "Shrub",
+      "physiognomy": "Riparian",
+      "type": "wetland_grass"
+    },
+    {
+      "value": 9022,
+      "name": "Rocky Mountain Subalpine-Montane Riparian Woodland",
+      "lifeform": "Tree",
+      "physiognomy": "Riparian",
+      "type": "riparian"
+    },
+    {
+      "value": 9328,
+      "name": "Interior Western North American Temperate Ruderal Shrubland",
+      "lifeform": "Shrub",
+      "physiognomy": "Exotic Tree-Shrub",
+      "type": "sagebrush_flat"
+    },
+    {
+      "value": 9519,
+      "name": "Rocky Mountain Lower Montane-Foothill Riparian Shrubland",
+      "lifeform": "Shrub",
+      "physiognomy": "Riparian",
+      "type": "wetland_grass"
+    },
+    {
+      "value": 9828,
+      "name": "Interior Western North American Temperate Ruderal Grassland",
+      "lifeform": "Herb",
+      "physiognomy": "Exotic Herbaceous",
+      "type": "meadow"
+    },
+    {
+      "value": 9829,
+      "name": "Western North American Ruderal Wet Meadow & Marsh",
+      "lifeform": "Herb",
+      "physiognomy": "Riparian",
+      "type": "wetland_grass"
+    }
+  ],
+  "generatedBy": "scripts/fetch-landfire.mjs"
+}

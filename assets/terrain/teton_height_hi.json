@@ -1,0 +1,26 @@
+{
+  "name": "Grand Teton crest patch (Buck Mountain -> Mount Moran)",
+  "width": 2284,
+  "height": 3608,
+  "minElev": 1951,
+  "maxElev": 4196,
+  "bbox": {
+    "latMin": 43.64,
+    "latMax": 43.95,
+    "lonMin": -110.95,
+    "lonMax": -110.68
+  },
+  "projection": "equirectangular (regular lat/lon grid); row 0 = latMax, col 0 = lonMin",
+  "source": "aws-terrain-tiles/terrarium",
+  "sourceZoom": 14,
+  "sourceUrl": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png",
+  "license": "public domain / open data (Mapzen Terrain Tiles, USGS 3DEP + SRTM)",
+  "encoding": "RGB8 PNG; value = (R << 8) | G; B unused. elev_m = minElev + value / 65535 * (maxElev - minElev)",
+  "metresPerPixel": {
+    "x": 9.5,
+    "y": 9.5
+  },
+  "generatedBy": "scripts/fetch-terrain.mjs",
+  "role": "crest-patch",
+  "parent": "teton_height.png"
+}
